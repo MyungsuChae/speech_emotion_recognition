@@ -28,9 +28,9 @@ def init():
 
 ### Load Data
 def load_data():
-    file_path = "/data3/younghoon/untitled9/"
-    wb = openpyxl.load_workbook("/data3/younghoon/Audio_data/voice_annotation_emotion.xlsx")
-    ws = wb.get_sheet_by_name("Sheet1")
+    file_path = "NEED_TO_CHANGE"
+    wb = openpyxl.load_workbook("NEED_TO_CHANGE")
+    ws = wb.get_sheet_by_name("NEED_TO_CHANGE")
 
     Num_data_a = 9500
     Num_data_k = 0
@@ -144,7 +144,7 @@ def main():
     print('Test accuracy:', score[1])
 
     ### Save
-    file_path = "/data3/younghoon/untitled9/"
+    file_path = "NEED_TO_CHANGE"
     model_name = file_path + 'model/' + 'Emotion_model_'+ str(time.localtime().tm_mon).zfill(2) + str(time.localtime().tm_mday).zfill(2) + '_' + str(time.localtime().tm_hour).zfill(2) + str(time.localtime().tm_min).zfill(2)
     model_name = model_name + '_' + str(round(score[1]*100)) +'.h5'
     print(model_name)
