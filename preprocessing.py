@@ -12,11 +12,11 @@ import matplotlib.pyplot as plt
 import tensorflow as tf
 plt.style.use('ggplot')
 
-wb = openpyxl.load_workbook("/data3/younghoon/Audio_data/voice_annotation_gender.xlsx")
-ws = wb.get_sheet_by_name("Sheet1")
+wb = openpyxl.load_workbook("NEED_TO_CHANGE")
+ws = wb.get_sheet_by_name("NEED_TO_CHANGE")
 
-file_path = "/data3/mschae89/FlagshipAER/"
-audio_path = "/data3/younghoon/Audio_data/mp4_file/"
+file_path = "NEED_TO_CHANGE"
+audio_path = "NEED_TO_CHANGE"
 Num_Frame = 1000    # max wave length (10 sec)
 Stride = 0.01       # stride (10ms)
 Window_size = 0.025 # filter window size (25ms)
