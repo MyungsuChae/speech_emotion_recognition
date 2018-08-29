@@ -26,9 +26,9 @@ def init():
 ### Load Data
 
 def load_data():
-    file_path = "/data3/mschae89/FlagshipAER/"
-    wb = openpyxl.load_workbook("/data3/younghoon/Audio_data/voice_annotation_emotion.xlsx")
-    ws = wb.get_sheet_by_name("Sheet1")
+    file_path = "NEED_TO_CHANGE"
+    wb = openpyxl.load_workbook("NEED_TO_CHANGE")
+    ws = wb.get_sheet_by_name("NEED_TO_CHANGE")
 
     Num_data = 9500
     Num_seq  = 1000
@@ -148,7 +148,7 @@ def main():
 
 
     ### Save model
-    file_path = "/data3/mschae89/FlagshipAER/"
+    file_path = "NEED_TO_CHANGE"
     model_name = 'Emotion_model_mels40_'+ str(time.localtime().tm_mon).zfill(2) + str(time.localtime().tm_mday).zfill(2) + '_' + str(time.localtime().tm_hour).zfill(2) + str(time.localtime().tm_min).zfill(2)
     model_name = file_path + 'model/' + model_name + '_MA_' + str(round(score[1]*100)) +'.h5'
     print(model_name)
