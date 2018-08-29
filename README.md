@@ -2,7 +2,7 @@
 CNN and GRU based end-to-end speech emotion recognition
 
 # Contributors
-Myungsu Chae and Young Hoon Shin
+Myungsu Chae and Young Hoon Shin from KAIST.
 
 # Dataset
 Script based Korean multi-modal dataset (speech and video) from Acryl. <br/>
